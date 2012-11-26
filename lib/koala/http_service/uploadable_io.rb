@@ -12,7 +12,7 @@ module Koala
         # filename is used in the Ads API
         # if it's provided, take precedence over the detected filename
         # otherwise, fall back to a dummy name
-        @filename = filename || @filename || "koala-io-file.dum"
+        @filename = filename || @filename || "koala-io-file.mp4"
 
         raise KoalaError.new("Invalid arguments to initialize an UploadableIO") unless @io_or_path
         raise KoalaError.new("Unable to determine MIME type for UploadableIO") if !@content_type
